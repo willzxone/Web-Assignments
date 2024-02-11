@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
+
+/* Navbar Section */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    background-color: rgb(193, 43, 6);
+}
+
+
+header h2{
+    padding-left: 10px;
+}
+
+h2,li,a{
+    font-family: sans-serif;
+    color: white;
+    background-color: rgb(193, 43, 6);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100px;
+    color: white;
+    background-color: rgb(193, 43, 6);
+}
+
+
+
+nav{
+    justify-content:center;
+    background-color: rgb(193, 43, 6);
+}
+
+.menu{
+    list-style: none;
+    background-color: rgb(193, 43, 6);
+}
+
+.menu li{
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.menu li a{
+    color: white;
+    transition: all ease 0.7s;
+}
+
+.menu li a:hover{
+    opacity: 0.6;
+}
+
+/* carousel */
+
+.container{
+    padding: 30px;
+}
+
+.slide-wrapper{
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+
+}
+
+.slider{
+    display: flex;
+    overflow-x: auto;
+    aspect-ratio: 16/9;
+    scroll-snap-type: x mandatory;
+    box-shadow: 0px 0px 60px 40px black inset;
+    border-radius: 5px;
+}
+
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+/* Menu */
+
+.today-menu {
+    padding: 30px;
+}
+
+.today-menu h2 {
+    text-align: center;
+    font-family:  Montserrat, sans-serif;
+}
+
+.cards {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    overflow: hidden;
+}
+
+.card-item {
+    padding: 5px;
+    border: 2px solid black;
+    transition: transform 2s ease-in-out; 
+    cursor: pointer; 
+}
+
+.card-item img {
+    width: 100%;
+    height: 200px;
+}
+
+.card-item h4 {
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    font-family:  Montserrat, sans-serif;
+}
+
+.card-item:nth-child(1):hover {
+    transform: rotate(360deg); /* Apply a different transform for the first card */
+}
+
+.card-item:nth-child(2):hover {
+    transform: rotate3d(0, 1, 0, 360deg); /* Apply a different 3D rotation for the second card */
+}
+
+.card-item:nth-child(3):hover {
+    transform: rotate(-360deg); /* Apply a different transform for the first card */
+}
+
+/* customer remarks */
+
+.customer-remarks{
+    padding: 30px;
+}
+
+.customer-remarks h2{
+    text-align: center;
+    font-family:  Montserrat, sans-serif;
+}
+
+.remarks{
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+.remark-item{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.remark-item p{
+    font-family: Montserrat, sans-serif;
+    font-size: larger;
+}
+
+
+/* Order */
+
+.order{
+    padding: 30px;
+    align-items: center;
+}
+
+.order h2{
+    text-align: center;
+    font-family:  Montserrat, sans-serif;
+}
+
+.order p{
+    margin-top: 10px;
+    font-family:  Montserrat, sans-serif;
+    text-align: center;
+}
+
+.order button{
+    margin-top: 10px;
+    margin-left: 740px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-family:  Montserrat, sans-serif;
+    background-color: rgb(193, 43, 6);
+    border: none;
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0, 0.2);
+    transition: all ease-in-out 0.3s;
+}
+
+.order button:hover{
+    opacity: 0.7;
+}
+
+.order button:active{
+    background-color: black;
+    color: rgb(193, 118, 6);
+}
+
+/* Qualities */
+
+.order{
+    padding: 30px;
+}
+
+.quality-item{
+    margin-top: 10px;
+}
+
+.quality-item h3{
+    text-align: center;
+    font-family:  Montserrat, sans-serif;
+}
+
+.quality-item p{
+    text-align: center;
+    margin-top: 5px;
+    font-family:  Montserrat, sans-serif;
+}
+
+/* Contact */
+
+.contact-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea,input,label{
+    display: block;
+    width: 100%;
+    margin-left: 0px;
+    background-color: rgb(193, 43, 6);
+    color: white;
+    cursor: text;
+    border-radius: 2px;
+}
+
+input{
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: black;
+}
+
+label{
+    font-family: serif;
+    font-size: large;
+    font-weight: 100;
+}
+
+.contact{
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid;
+    width: 400px;
+    background-color: rgb(193, 43, 6);
+}
+
+.contact.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-heading{
+    font-weight: 500;
+    margin-left: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 1000;
+}
+
+.name{
+    padding-top: 15px;
+    margin-left: 0px;
+}
+
+.email{
+    padding-top: 15px;
+    margin-left: 0px;
+}
+
+.number{
+    padding-top: 15px;
+    margin-left: 0px;
+}
+
+.message{
+    padding-top: 15px;
+    margin-left: 0px;
+}
+
+.submit-button{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    margin-top: 10px;
+    margin-left: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 140px;
+    padding-right: 139px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+
+.reset-button{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    margin-top: 7px;
+    margin-left: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 143px;
+    padding-right: 143px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+
+.submit-button:hover{
+    opacity: 0.7;
+}
+
+.submit-button:active{
+    background-color: white;
+    color: blue;
+}
+
+.reset-button:hover{
+    opacity: 0.7;
+}
+
+.reset-button:active{
+    background-color: white;
+    color: blue;
+}
+
+
+/* footer */
+
+.footer{
+    padding: 0px;
+    background-color: rgb(193, 43, 6);
+}
+
+.footer h3{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgb(193, 43, 6);
+}
+
